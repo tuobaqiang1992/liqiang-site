@@ -21,7 +21,7 @@
     $('list').innerHTML = r.map((w) => {
       const href = w.local ? `a/${w.id}.html` : w.url;
       const tags = (w.tags || []).map((x) => `<span class="chip muted">${esc(x)}</span>`).join('');
-      return `<a class="wcard" href="${href}">
+      return `<a class="wcard${w.cover?' hascover':''}" href="${href}">${w.cover?`<img class="wcover" src="${w.cover}" loading="lazy" decoding="async" alt="">`:''}
         <div class="chips"><span class="chip">${esc(w.acc)}</span><span class="chip muted">${esc(w.year)}</span>${tags}</div>
         <h3>${esc(w.title)}</h3>
         <p class="ex">${esc(w.ex)}…</p>
