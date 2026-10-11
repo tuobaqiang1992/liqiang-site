@@ -187,3 +187,11 @@ a:hover{text-decoration:underline}
 .pcover.hasimg{background-size:cover!important;background-position:center;min-height:170px}
 .wcard.hascover{padding-top:0;overflow:hidden}
 .wcover{display:block;width:calc(100% + 32px);margin:0 -16px 12px;height:150px;object-fit:cover;background:#eee5d6}
+.cmts{margin-top:36px;border-top:1px solid var(--line);padding-top:8px}.cmts ul{list-style:none;padding:0;margin:0}
+.cmt{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0;font-size:15px}
+.cmt p{margin:6px 0 0;line-height:1.7}.chead{display:flex;gap:8px;align-items:center;font-size:14px}.clike{color:#b0574a;font-size:12px;margin-left:auto}
+.creply{margin-top:8px;padding:8px 10px;background:var(--gold-bg);border-radius:8px;font-size:14px;color:#5a4a28}
+.qrow{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;-webkit-overflow-scrolling:touch}
+.qcard{flex:0 0 82%;scroll-snap-align:start;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;color:var(--ink)}
+.qcard p{margin:0 0 10px;font-size:16px;line-height:1.7}.qcard span{color:var(--mute);font-size:12px}.qcard:hover{text-decoration:none;border-color:#d4c4a8}
+@media(min-width:720px){.qcard{flex-basis:46%}}
